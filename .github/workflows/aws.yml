@@ -51,9 +51,9 @@ jobs:
         npm install
 
         # Verify the existence of app.js before attempting to start/restart
-        if [ -f "app.js" ]; then
+        if [ -f "server.js" ]; then
           echo "Starting/restarting application..."
-          pm2 restart app.js || pm2 start app.js
+          pm2 restart server.js || pm2 start server.js
         else
           echo "Error: app.js not found in $(pwd)"
           echo "Contents of current directory:"
