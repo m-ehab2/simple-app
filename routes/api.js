@@ -12,7 +12,7 @@ router.get('/items', (req, res) => {
   });
 });
 
-// GET item by ID
+// GET item by I
 router.get('/items/:id', (req, res) => {
   const id = parseInt(req.params.id);
   res.json({ id, name: `Item ${id}` });
